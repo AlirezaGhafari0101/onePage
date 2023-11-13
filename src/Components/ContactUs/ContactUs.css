@@ -1,0 +1,84 @@
+#contact {
+  text-align: center;
+}
+
+.contact__title {
+  letter-spacing: 0 !important;
+}
+
+.contact-form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas:
+    "map map map"
+    "infos form form";
+  gap: 1rem;
+}
+
+.google-map {
+  grid-area: map;
+  /* margin-bottom: -24rem; */
+  /* height: 32rem !important; */
+}
+
+.google-map > img {
+  width: 100%;
+  height: 33rem;
+  object-fit: fill;
+  margin-bottom: 2rem;
+}
+
+.contact__infos {
+  grid-area: infos;
+}
+.contact-form {
+  grid-area: form;
+}
+
+.contact-form form {
+  text-align: center;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ced4da;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-family: var(--secondary-font);
+  border-radius: 0.4rem;
+}
+
+.contact-form form textarea {
+  resize: none;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  border: 1px solid var(--btns-color);
+}
+
+.form-inputs__wrapper {
+  display: flex;
+  margin: 0 -1rem 0 -1rem;
+}
+
+.form-inputs__wrapper input {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.form-cta {
+  color: #fff;
+  background-color: var(--btns-color);
+  font-weight: bold;
+  padding: 1rem 3rem !important;
+  font-size: 1.4rem !important;
+  transition: all 0.3s ease;
+}
+
+.form-cta:hover {
+  opacity: 0.9;
+}

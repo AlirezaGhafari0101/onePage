@@ -1,0 +1,20 @@
+.comments__content {
+  text-align: center;
+}
+
+.swiper-pagination {
+  position: initial !important;
+  margin-top: 15px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  border: 1px solid var(--btns-color) !important;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--btns-color) !important;
+}

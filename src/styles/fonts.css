@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Iranian Sans";
+  src: url(../fonts/A-Iranian-Sans/Iranian\ Sans.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src: url(../fonts/Lalezar-Font/TTF/Lalezar-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Parastoo";
+  src: url(../fonts/Parastoo/Parastoo.ttf) format("truetype");
+}

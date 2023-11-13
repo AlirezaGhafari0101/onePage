@@ -1,0 +1,174 @@
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .client-box {
+    width: 50%;
+    flex: 1;
+  }
+  /* contact us */
+  .form-inputs__wrapper {
+    display: block;
+    margin: 0;
+  }
+  .form-inputs__wrapper input {
+    margin: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  /* navbar */
+  .mobile-menu {
+    display: block;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .header__left {
+    display: none;
+  }
+  /* contact us */
+  .contact-form__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    grid-template-areas:
+      "map"
+      "infos"
+      "form";
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 54rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 72rem;
+  }
+  /* clients */
+  .client-box {
+    width: 30%;
+  }
+
+  /* footer */
+  .footer-items {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 96rem;
+  }
+  /* navbar */
+  .mobile-menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .header__left {
+    display: flex;
+  }
+  /* about */
+  .about__description {
+    flex-direction: row;
+  }
+  .about__description__right {
+    flex: 1;
+  }
+  .about__description__left {
+    flex: 1;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+  /* about-video */
+  .about-video__content {
+    display: flex;
+  }
+
+  .about-video__content__right {
+    flex: 1;
+    margin-left: 2rem;
+  }
+
+  .about-video__content__left {
+    flex: 1;
+  }
+
+  /* services */
+  .services__box {
+    max-width: 40rem;
+  }
+
+  /* footer */
+  .footer-item {
+    flex-wrap: nowrap;
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 114rem;
+  }
+  /* hero */
+
+  /* about video */
+  .about-video__img {
+    height: 360px;
+  }
+
+  #hero {
+    background-attachment: fixed;
+  }
+  /* clients */
+  .client-box {
+    width: 10%;
+    flex: 1;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 137rem;
+  }
+  /* hero */
+  #hero {
+    height: 100vh;
+  }
+  .hero-box {
+    width: 32rem;
+  }
+
+  /* counts */
+
+  .counts-box {
+    max-width: 32rem;
+  }
+
+  /* services */
+  .services__box {
+    max-width: 40rem;
+  }
+
+  /* prfiiles */
+
+  .profile-box {
+    max-width: 32rem;
+  }
+}

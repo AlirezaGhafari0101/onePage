@@ -1,0 +1,173 @@
+#header {
+  border-bottom: 1px solid #e6f2fb;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.header__wrapper {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  color: var(--headings-color);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  letter-spacing: -0.1rem;
+}
+
+/* nav mobile start */
+
+.hamburger-menu {
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.hamburger-menu__lines {
+  position: relative;
+  width: 2.5rem;
+  height: 0.3rem;
+  border-radius: 2rem;
+  background-color: var(--headings-color);
+}
+
+.hamburger-menu__lines::after,
+.hamburger-menu__lines::before {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 0.3rem;
+  border-radius: 2rem;
+  background-color: var(--headings-color);
+}
+
+.hamburger-menu__lines::after {
+  top: 0.6rem;
+}
+
+.hamburger-menu__lines::before {
+  top: -0.6rem;
+}
+
+.mobile-menu {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(10, 38, 58, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mobile-menu.navbar--expanded {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu__close-icon {
+  font-size: 2.4rem;
+  color: #fff;
+  margin: 1.5rem;
+  font-weight: bolder;
+}
+
+.navbar-mobile {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile__item {
+  padding: 1.3rem 1.5rem;
+}
+
+.navbar-mobile__link {
+  color: var(--headings-color);
+  font-size: 1.4rem;
+}
+
+/* nav mobile end */
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__item {
+  padding: 0 1.5rem;
+}
+.navbar__link {
+  font-size: 1.3rem;
+  color: var(--headings-color);
+}
+
+.navbar__link__icon {
+  margin-right: 0.5rem;
+}
+
+.header__cta {
+  color: var(--white-color);
+  background-color: var(--btns-color);
+  margin-right: 1.5rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.header__cta:hover {
+  opacity: 0.8;
+}
+
+/* start dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.navbar-dropdown {
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  border-bottom: 2px solid var(--headings-color);
+  border-radius: 0.6rem;
+  top: 4rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar__item:hover .navbar-dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 4rem;
+}
+
+.dropdown__item {
+  min-width: 20rem;
+  padding: 1rem 1.5rem 1rem 5rem;
+}
+
+.dropdown__link {
+  color: var(--headings-color);
+}
+
+/* finish dropdown */

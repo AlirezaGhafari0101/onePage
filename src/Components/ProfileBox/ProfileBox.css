@@ -1,0 +1,65 @@
+.profile-box {
+  text-align: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 15px rgb(18 66 101 / 8%);
+  max-width: 40rem;
+  width: 100%;
+}
+
+.profile-box:hover .profile-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.profile__image {
+  width: 100%;
+  height: 34rem;
+  position: relative;
+}
+
+.profile__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-overlay {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: all 0.7s ease;
+}
+
+.profile-overlay__icon {
+  font-size: 2.2rem;
+  margin-left: 1rem;
+  color: var(--headings-color);
+}
+
+.profile-overlay__icon:hover {
+  color: var(--btns-color);
+}
+
+.profile__details {
+  margin: 3rem 0;
+}
+
+.profile__name {
+  color: var(--headings-color);
+  font-weight: bold;
+}
+
+.profile__job {
+  color: var(--light-grey-color);
+  font-size: 1.4rem;
+}

@@ -1,0 +1,57 @@
+#hero {
+  height: auto;
+  background: url("../../images/hero-bg.jpg");
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero__content {
+  padding: 11rem 0 0 0;
+  text-align: center;
+}
+
+.hero__title {
+  color: var(--headings-color);
+  font-size: 4.6rem;
+  font-family: "Lalezar";
+  letter-spacing: -0.2rem;
+}
+
+.hero__subtitle {
+  color: var(--paragraphs-color);
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.hero__cta {
+  background-color: var(--btns-color);
+  color: var(--white-color);
+  padding: 1.5rem 5.5rem !important;
+  font-size: 1.6rem !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.hero__cta:hover {
+  opacity: 0.8;
+}
+
+.hero-boxes__container {
+  margin-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -2rem;
+  margin-top: 10rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}

@@ -1,0 +1,89 @@
+.plan-box {
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0px 2px 15px rgb(18 66 101 / 8%);
+  max-width: 42rem;
+  width: 100%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.plan__name {
+  color: var(--headings-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.plan__price {
+  margin: 3rem 0;
+  color: var(--btns-color);
+  font-weight: bold;
+  font-size: 3rem;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.plan__price > sup {
+  font-size: 1.4rem;
+  position: absolute;
+  top: -1.5rem;
+  right: 7.8rem;
+}
+
+.plan__price > span {
+  color: var(--light-grey-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.plan__price--free {
+  display: block;
+  margin: 4.2rem 0;
+  color: var(--btns-color);
+  font-weight: bold;
+}
+
+.plan__services__list-item {
+  color: var(--headings-color);
+  font-size: 1.4rem;
+  padding: 0.8rem 0;
+}
+
+.plan__services__list-item--disabled {
+  text-decoration: line-through;
+  color: var(--light-grey-color);
+  font-size: 1.4rem;
+  padding: 0.8rem 0;
+}
+
+.plan__cta {
+  color: var(--btns-color);
+  border: 2px solid var(--btns-color);
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 1rem 3.8rem;
+  margin-top: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.plan__cta:hover {
+  background-color: var(--btns-color);
+  color: #fff;
+}
+
+.plan__cta--blue {
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 1rem 3.8rem;
+  margin-top: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.plan__cta--blue:hover {
+  background-color: #fff;
+  color: var(--btns-color);
+}

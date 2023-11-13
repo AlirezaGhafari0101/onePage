@@ -1,0 +1,30 @@
+.hero-box {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
+  padding: 5rem 3rem;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgb(18 66 101 / 8%);
+  transition: all 0.25s ease-in-out;
+  border-radius: 0.8rem;
+  z-index: 1;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.hero-box:hover {
+  transform: scale(1.05);
+}
+
+.hero-box:hover .box__title {
+  color: var(--btns-color);
+}
+
+.hero-box__icon {
+  font-size: 4rem;
+  color: var(--btns-color);
+}

@@ -1,0 +1,7 @@
+#services {
+  background-color: var(--bg-secondary-color);
+}
+
+.services__content {
+  text-align: center;
+}
